@@ -8,6 +8,10 @@ String name;
 		this.name = name;
 	}
 
+	public void eat(Thing aThing){
+		
+		
+	}
 	@Override
 	public void move() {
 		// TODO Auto-generated method stub
