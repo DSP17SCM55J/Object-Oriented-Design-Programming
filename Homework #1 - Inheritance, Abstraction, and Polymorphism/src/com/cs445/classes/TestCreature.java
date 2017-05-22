@@ -8,7 +8,7 @@ public class TestCreature extends java.lang.Object {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Creature[] cr = new Creature[6];
+		Creature[] cr = new Creature[CREATURE_COUNT];
 		Thing[] thing1 = new Thing[THING_COUNT];
 		thing1[0]= new Thing("Banana");
 		thing1[1] = new Thing("meat");

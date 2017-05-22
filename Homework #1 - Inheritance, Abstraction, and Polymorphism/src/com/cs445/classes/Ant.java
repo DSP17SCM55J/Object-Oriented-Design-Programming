@@ -11,7 +11,7 @@ String name;
 	@Override
 	public void move() {
 		// TODO Auto-generated method stub
-		System.out.println(name+" "+getClass().getSimpleName()+" is crawling around.");
+		System.out.println(super.name+" "+getClass().getSimpleName()+" is crawling around.");
 		
 	}
 
