@@ -5,12 +5,13 @@ public abstract class Creature extends Thing {
 	Thing eatObject= null;
 	public Creature(String name) {
 		super(name);
+		super.toString();
 		// TODO Auto-generated constructor stub
 	}
 
 	public void eat(Thing athing){
 		eatObject = athing;
-		System.out.println(this+"has just eaten a"+athing.toString());
+		System.out.println(super.name+" "+getClass().getSimpleName()+" has just eaten a"+athing.toString());
 	}
 	
 	public abstract void move();
@@ -18,10 +19,10 @@ public abstract class Creature extends Thing {
 	public void whatDidYouEat(){
 		
 		if(eatObject==null){
-			System.out.println(this.toString()+"has had nothing to eat");
+			System.out.println(super.name+" "+getClass().getSimpleName()+" has had nothing to eat");
 		}
 		else{
-			System.out.println(this.getClass()+"has eaten a "+eatObject.toString());
+			System.out.println(super.name+" "+getClass().getSimpleName()+" has eaten a "+eatObject.toString());
 		}
 	}
 }

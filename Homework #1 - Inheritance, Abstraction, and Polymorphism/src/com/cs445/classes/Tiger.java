@@ -5,13 +5,13 @@ public class Tiger extends Creature{
 	String name;
 	public Tiger(String name) {
 		super(name);
-		this.name = name;
+		super.toString();
 	}
 
 	@Override
 	public void move() {
 		// TODO Auto-generated method stub
-		System.out.println(name+" "+this.getClass()+" has just pounced.");
+		System.out.println(super.name+" "+getClass().getSimpleName()+" has just pounced.");
 		
 	}
 

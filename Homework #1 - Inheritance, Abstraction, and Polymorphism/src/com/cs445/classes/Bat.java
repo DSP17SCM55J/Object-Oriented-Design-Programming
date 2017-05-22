@@ -5,17 +5,17 @@ public class Bat extends Creature implements Flyer{
 	public Bat(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
-		this.name = name;
+		super.toString();
 	}
 	
 	@Override
 	public void eat(Thing aThing){
 
 		if(aThing.getClass().getSimpleName().equalsIgnoreCase("Thing")){
-			System.out.println(this.getClass().toString()+" won't eat a "+aThing.toString());
+			System.out.println(super.name+" "+this.getClass().getSimpleName()+" won't eat a "+aThing.toString());
 		}
 		else{
-			System.out.println(this.getClass().toString()+" has just eaten a "+aThing.toString());
+			System.out.println(super.name+ " " +this.getClass().getSimpleName()+" has just eaten a "+aThing.toString());
 		}
 	}
 	@Override
@@ -24,7 +24,7 @@ public class Bat extends Creature implements Flyer{
 		fly();
 	}
 	public void fly(){
-		System.out.println(name+" "+this.getClass()+" is swooping through the dark.");
+		System.out.println(super.name+" "+this.getClass().getSimpleName()+" is swooping through the dark.");
 	}
 
 
